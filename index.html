@@ -11,6 +11,121 @@
             top: 0 !important;
             z-index: 1000 !important;
         }
+        
+        /* 頁面主要內容區域 */
+        .content-section {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        .content-section h2 {
+            color: #004080;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* 資訊圖表樣式 */
+        .info-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border: 1px solid #e2e8f0;
+        }
+
+        /* 底部控制區塊 (QR Code + 按鈕) */
+        .bottom-controls {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+
+        /* 左側 QR Code */
+        .qr-container {
+            flex: 0 0 160px; /* 固定寬度 */
+            text-align: center;
+        }
+        .qr-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border: 1px solid #cbd5e1;
+        }
+        .qr-container span {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #475569;
+            font-weight: bold;
+        }
+
+        /* 右側按鈕連結區 */
+        .links-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .links-container p {
+            margin: 0 0 -5px 0; /* 微調與按鈕的間距 */
+            color: #334155;
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        /* 按鈕共用樣式 */
+        .action-link {
+            display: inline-block;
+            padding: 14px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            transition: 0.2s;
+            font-size: 1.1rem;
+        }
+        /* YouTube 按鈕 */
+        .yt-link {
+            background: #dc2626; /* YouTube 紅色 */
+            color: white;
+        }
+        .yt-link:hover {
+            background: #b91c1c;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(220, 38, 38, 0.3);
+        }
+        /* 替代網頁按鈕 */
+        .alt-link {
+            background: #3b82f6; /* 穩定的藍色 */
+            color: white;
+        }
+        .alt-link:hover {
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);
+        }
+
+        /* 響應式設計：手機版時改為上下排列 */
+        @media (max-width: 768px) {
+            .bottom-controls {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            .qr-container { flex: 0 0 140px; }
+            .links-container { width: 100%; }
+        }
     </style>
 </head>
 <body>
@@ -24,21 +139,64 @@
     </nav>
     
     <main>
-        <h1>Briefing Video - Harassment & Violence Prevention Policy</h1>
+        <h1 style="color: #004080; border-bottom: none; margin-bottom: 10px;">Harassment & Violence Prevention Policy</h1>
+        <p style="text-align: center; color: #64748b; margin-bottom: 40px;">Please read the infographic or watch the briefing video before taking the quiz.</p>
         
-        <div class="video-section">
+        <div class="content-section">
             <h2>Briefing in English</h2>
-            <iframe src="https://drive.google.com/file/d/1atNf2AyeIFD1agQZOulrkzwBElAjkSom/preview" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <img src="H-E.jpg" alt="English Infographic" class="info-img">
+            
+            <div class="bottom-controls">
+                <div class="qr-container">
+                    <img src="QR-E.jpg" alt="Scan QR to watch">
+                    <span>Scan for Mobile</span>
+                </div>
+                <div class="links-container">
+                    <p>🎥 Watch on a laptop:</p>
+                    <a href="https://www.youtube.com/watch?v=yP80RVxIHP4" target="_blank" class="action-link yt-link">Watch on YouTube (New Window)</a>
+                    
+                    <p style="margin-top: 10px;">⚠️ If YouTube isn't working:</p>
+                    <a href="https://briefing-gd.vercel.app/" target="_self" class="action-link alt-link">Use Alternate Video Link</a>
+                </div>
+            </div>
         </div>
 
-        <div class="video-section">
-            <h2>Briefing in Chinese</h2>
-            <iframe src="https://drive.google.com/file/d/1HMPMbSAZPvUs6naJMUf2BOUKKUUCQRhz/preview" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div class="content-section">
+            <h2>Briefing in Chinese (中文說明)</h2>
+            <img src="H-C.jpg" alt="Chinese Infographic" class="info-img">
+            
+            <div class="bottom-controls">
+                <div class="qr-container">
+                    <img src="QR-C.jpg" alt="Scan QR to watch">
+                    <span>手機掃描觀看</span>
+                </div>
+                <div class="links-container">
+                    <p>🎥 使用筆電觀看：</p>
+                    <a href="https://www.youtube.com/watch?v=OuN2ApAGF8M" target="_blank" class="action-link yt-link">在 YouTube 上觀看 (另開視窗)</a>
+                    
+                    <p style="margin-top: 10px;">⚠️ 如果 YouTube 無法播放：</p>
+                    <a href="https://briefing-gd.vercel.app/" target="_self" class="action-link alt-link">使用備用影片連結</a>
+                </div>
+            </div>
         </div>
 
-        <div class="video-section">
-            <h2>Briefing in Vietnamese</h2>
-            <iframe src="https://drive.google.com/file/d/16ytghFmubyHStCCdfvyIfrXVwiiczQ-4/preview" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div class="content-section">
+            <h2>Briefing in Vietnamese (Tiếng Việt)</h2>
+            <img src="H-V.jpg" alt="Vietnamese Infographic" class="info-img">
+            
+            <div class="bottom-controls">
+                <div class="qr-container">
+                    <img src="QR-V.jpg" alt="Scan QR to watch">
+                    <span>Quét để xem</span>
+                </div>
+                <div class="links-container">
+                    <p>🎥 Xem trên máy tính xách tay:</p>
+                    <a href="https://www.youtube.com/watch?v=7myuZBi0_0k" target="_blank" class="action-link yt-link">Xem trên YouTube (Cửa sổ mới)</a>
+                    
+                    <p style="margin-top: 10px;">⚠️ Nếu YouTube không hoạt động:</p>
+                    <a href="https://briefing-gd.vercel.app/" target="_self" class="action-link alt-link">Sử dụng liên kết video thay thế</a>
+                </div>
+            </div>
         </div>
     </main>
 </body>
