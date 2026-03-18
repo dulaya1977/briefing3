@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Ship Briefing</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Quiz 專屬科技感樣式 */
+        .quiz-container { max-width: 800px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: bold; color: #004080; }
+        .form-group input { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; font-size: 16px; }
+        .btn { background: linear-gradient(90deg, #1e3a8a 0%, #3b82f6 100%); color: white; border: none; padding: 12px 24px; font-size: 16px; border-radius: 6px; cursor: pointer; transition: 0.3s; display: block; width: 100%; font-weight: bold; }
+        .btn:hover { opacity: 0.9; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4); }
+        .btn:disabled { background: #94a3b8; cursor: not-allowed; box-shadow: none; }
+        
+        /* 題目排版 */
+        .question-block { margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+        .question-text { font-size: 1.15rem; font-weight: bold; margin-bottom: 20px; color: #1e3a8a; line-height: 1.5; }
+        .lang-sub-q { display: block; font-size: 0.95rem; color: #555; font-weight: normal; margin-top: 4px; }
+        .options-list { display: flex; flex-direction: column; gap: 12px; }
+        .option-item { display: flex; align-items: flex-start; background: #f8fafc; border: 1px solid #e2e8f0; padding: 16px; border-radius: 8px; cursor: pointer; transition: 0.2s; }
+        .option-item:hover { background: #e0f2fe; border-color: #7dd3fc; }
+        .option-item input[type="radio"] { margin-top: 5px; margin-right: 15px; transform: scale(1.2); cursor: pointer; }
+        .option-text-container { display: flex; flex-direction: column; gap: 4px; }
+        .lang-en { font-weight: 600; color: #333; font-size: 1.05rem; }
+        .lang-sub-opt { font-size: 0.9rem; color: #64748b; }
+
+        /* 結果與載入畫面 */
+        #result-screen { display: none; text-align: center; padding: 40px 20px; }
+        .score-display { font-size: 3.5rem; color: #004080; font-weight: bold; margin: 20px 0; }
+        .success-msg { color: #15803d; font-size: 1.2rem; margin-top: 20px; font-weight: 500; }
+        .info-msg { color: #64748b; margin-top: 10px; }
+        
+        #loading-screen { display: none; text-align: center; padding: 50px; }
+        .spinner { border: 4px solid #f3f3f3; border-top: 4px solid #3b82f6; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin: 0 auto 20px; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        nav { position: sticky !important; top: 0 !important; z-index: 1000 !important; }
+        .hidden { display: none !important; }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Harassment</a></li>
+            <li><a href="stevedore.html">Stevedore</a></li>
+            <li><a href="quiz.html" class="quiz-btn">Quiz</a></li>
+            <li><a href="scores.html">Scores</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="quiz-container">
+            <div id="info-screen">
+                <h1 style="color: #004080; text-align: center;">Harassment Policy Quiz</h1>
+                <p style="text-align: center; color: #666; margin-bottom: 30px;">Please enter your details to start the assessment.</p>
+                
+                <div class="form-group"><label>Vessel Name</label><input type="text" id="vesselName" required placeholder="e.g. MV Wisdom"></div>
+                <div class="form-group"><label>Full Name</label><input type="text" id="userName" required placeholder="e.g. John Doe"></div>
+                <div class="form-group"><label>Rank</label><input type="text" id="userRank" required placeholder="e.g. Chief Officer"></div>
+                <div class="form-group"><label>Email Address</label><input type="email" id="userEmail" required placeholder="your.email@example.com"></div>
+                <button class="btn" onclick="startQuiz()">Start Quiz</button>
+            </div>
+
+            <div id="quiz-screen" class="hidden">
+                <div id="quiz-content"></div>
+                <button class="btn" id="submit-btn" onclick="submitQuiz()" style="margin-top: 20px;">Submit Answers</button>
+            </div>
+
+            <div id="loading-screen" class="hidden">
+                <div class="spinner"></div>
+                <h2 style="color:#1e3a8a;">Submitting your test...</h2>
+                <p style="color:#64748b;">Please wait, your score is being calculated and saved.</p>
+            </div>
+
+            <div id="result-screen" class="hidden">
+                <h1>Assessment Completed!</h1>
+                <div class="score-display"><span id="final-score">0</span>%</div>
+                <p class="success-msg">Your result has been successfully recorded and the report has been sent.</p>
+                <p class="info-msg">You can check your detailed review in your Email, or view all records on the <a href="scores.html" style="color:#3b82f6; text-decoration:underline;">Scores page</a>.</p>
+                
+                <button class="btn" onclick="location.reload()" style="margin-top: 30px; width: auto; padding: 10px 30px; margin: 40px auto 0;">Take Another Quiz</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // ⭐ 將這裡替換成您部署 GAS 後取得的 Web App URL ⭐
+        const GAS_URL = "https://script.google.com/macros/s/AKfycbz8WbXiYWBihL9L_gqElxeHRVEUbt3jaDm0k-Xjwvf00pKn_ZWTSjAeMg3Bn6UAlT_dvQ/exec"; 
+
+        let allQuestions = [];
+        let selectedQuestions = [];
+        let userInfo = {};
+
+        window.onload = async () => {
+            try {
+                const response = await fetch('./harassment.json');
+                allQuestions = await response.json();
+            } catch (error) {
+                console.error("Failed to load questions", error);
+                alert("Error loading quiz data. Please check the network.");
+            }
+        };
+
+        function startQuiz() {
+            userInfo = {
+                vessel: document.getElementById('vesselName').value.trim(),
+                name: document.getElementById('userName').value.trim(),
+                rank: document.getElementById('userRank').value.trim(),
+                email: document.getElementById('userEmail').value.trim()
+            };
+            if(!userInfo.vessel || !userInfo.name || !userInfo.rank || !userInfo.email) {
+                alert("Please fill in all fields."); return;
+            }
+            selectedQuestions = allQuestions.sort(() => 0.5 - Math.random()).slice(0, 10);
+            renderQuiz();
+            document.getElementById('info-screen').classList.add('hidden');
+            document.getElementById('quiz-screen').classList.remove('hidden');
+        }
+
+        function renderQuiz() {
+            const container = document.getElementById('quiz-content');
+            container.innerHTML = '';
+            selectedQuestions.forEach((q, index) => {
+                const block = document.createElement('div');
+                block.className = 'question-block';
+                let optionsHtml = '';
+                q.options.forEach((opt, optIndex) => {
+                    optionsHtml += `<label class="option-item"><input type="radio" name="q${index}" value="${optIndex}"><div class="option-text-container"><span class="lang-en">${opt.en}</span><span class="lang-sub-opt">${opt['zh-CN']}</span><span class="lang-sub-opt">${opt['vi']}</span></div></label>`;
+                });
+                block.innerHTML = `<div class="question-text">${index + 1}. ${q.question.en}<span class="lang-sub-q">${q.question['zh-CN']}</span><span class="lang-sub-q">${q.question['vi']}</span></div><div class="options-list">${optionsHtml}</div>`;
+                container.appendChild(block);
+            });
+        }
+
+        async function submitQuiz() {
+            let score = 0;
+            let reviewText = ""; 
+
+            for (let i = 0; i < selectedQuestions.length; i++) {
+                const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+                if (!selectedOption) { alert(`Please answer question ${i + 1}`); return; }
+                
+                const answerIndex = parseInt(selectedOption.value);
+                const q = selectedQuestions[i];
+                const isCorrect = answerIndex === q.correct_answer_index;
+                if (isCorrect) score += 10;
+
+                reviewText += `Q${i+1}: ${q.question.en}\n`;
+                reviewText += `Your Answer: ${q.options[answerIndex].en}\n`;
+                if (!isCorrect) reviewText += `Correct Answer: ${q.options[q.correct_answer_index].en}\n`;
+                reviewText += `Result: ${isCorrect ? "✅ Correct" : "❌ Incorrect"}\n\n`;
+            }
+
+            // 顯示載入畫面，隱藏按鈕防連點
+            document.getElementById('quiz-screen').classList.add('hidden');
+            document.getElementById('loading-screen').classList.remove('hidden');
+            document.getElementById('final-score').innerText = score;
+
+            // 呼叫 GAS API 儲存並發信
+            const payload = {
+                action: "submitQuiz",
+                vessel: userInfo.vessel,
+                name: userInfo.name,
+                rank: userInfo.rank,
+                email: userInfo.email,
+                score: score,
+                reviewText: reviewText
+            };
+
+            try {
+                const response = await fetch(GAS_URL, {
+                    method: 'POST',
+                    body: JSON.stringify(payload)
+                });
+                const result = await response.json();
+                
+                if(result.status === 'success') {
+                    document.getElementById('loading-screen').classList.add('hidden');
+                    document.getElementById('result-screen').classList.remove('hidden');
+                } else {
+                    throw new Error(result.message);
+                }
+            } catch (error) {
+                console.error("Submission failed:", error);
+                alert("Failed to submit score. Please try again or contact administrator.");
+                document.getElementById('loading-screen').classList.add('hidden');
+                document.getElementById('quiz-screen').classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
