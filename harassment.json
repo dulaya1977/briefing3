@@ -1,0 +1,622 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "What is the company's policy approach toward harassment and violence?",
+      "zh-CN": "公司对骚扰和暴力的政策态度是什么？",
+      "vi": "Chính sách của công ty đối với hành vi quấy rối và bạo lực là gì?"
+    },
+    "options": [
+      {
+        "en": "Zero Tolerance",
+        "zh-CN": "零容忍",
+        "vi": "Không khoan nhượng"
+      },
+      {
+        "en": "Allowed occasionally",
+        "zh-CN": "偶尔允许",
+        "vi": "Thỉnh thoảng được phép"
+      },
+      {
+        "en": "Ignored by management",
+        "zh-CN": "管理层视而不见",
+        "vi": "Bị ban quản lý phớt lờ"
+      },
+      {
+        "en": "Handled only by ratings",
+        "zh-CN": "仅由普通船员处理",
+        "vi": "Chỉ do thủy thủ xử lý"
+      }
+    ],
+    "correct_answer_index": 0
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Who does the violence and harassment policy apply to?",
+      "zh-CN": "暴力和骚扰政策适用于谁？",
+      "vi": "Chính sách bạo lực và quấy rối áp dụng cho ai?"
+    },
+    "options": [
+      {
+        "en": "Only the management team",
+        "zh-CN": "仅限管理团队",
+        "vi": "Chỉ dành cho ban quản lý"
+      },
+      {
+        "en": "Only visitors and contractors",
+        "zh-CN": "仅限访客和承包商",
+        "vi": "Chỉ dành cho khách viếng thăm và nhà thầu"
+      },
+      {
+        "en": "Everyone onboard, regardless of rank or position",
+        "zh-CN": "船上的所有人，无论级别或职位如何",
+        "vi": "Tất cả mọi người trên tàu, bất kể cấp bậc hoặc vị trí"
+      },
+      {
+        "en": "Only shore staff",
+        "zh-CN": "仅限岸上工作人员",
+        "vi": "Chỉ nhân viên trên bờ"
+      }
+    ],
+    "correct_answer_index": 2
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Which guideline does the company's policy comply with regarding the elimination of shipboard harassment?",
+      "zh-CN": "公司关于消除船上骚扰的政策符合哪项指南？",
+      "vi": "Chính sách của công ty tuân thủ hướng dẫn nào về việc loại bỏ quấy rối trên tàu?"
+    },
+    "options": [
+      {
+        "en": "SOLAS Convention",
+        "zh-CN": "海上人命安全公约 (SOLAS)",
+        "vi": "Công ước SOLAS"
+      },
+      {
+        "en": "Maritime Labour Convention (MLC, 2006)",
+        "zh-CN": "海事劳工公约 (MLC, 2006)",
+        "vi": "Công ước Lao động Hàng hải (MLC, 2006)"
+      },
+      {
+        "en": "MARPOL Annex VI",
+        "zh-CN": "防污公约附则 VI (MARPOL Annex VI)",
+        "vi": "Phụ lục VI của MARPOL"
+      },
+      {
+        "en": "STCW Regulations",
+        "zh-CN": "STCW 规则",
+        "vi": "Quy định STCW"
+      }
+    ],
+    "correct_answer_index": 1
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "How is 'Verbal Harassment' defined in the training material?",
+      "zh-CN": "培训材料中如何定义“言语骚扰”？",
+      "vi": "Tài liệu đào tạo định nghĩa 'Quấy rối bằng lời nói' như thế nào?"
+    },
+    "options": [
+      {
+        "en": "Offensive jokes, insults, or language based on personal characteristics",
+        "zh-CN": "基于个人特征的冒犯性笑话、侮辱或言语",
+        "vi": "Những trò đùa xúc phạm, lăng mạ hoặc ngôn từ dựa trên đặc điểm cá nhân"
+      },
+      {
+        "en": "Unwanted touching or physical threats",
+        "zh-CN": "不受欢迎的触摸或身体威胁",
+        "vi": "Chạm vào người không mong muốn hoặc đe dọa thể chất"
+      },
+      {
+        "en": "Giving daily work assignments",
+        "zh-CN": "分配日常工作任务",
+        "vi": "Phân công công việc hàng ngày"
+      },
+      {
+        "en": "Discussing cultural differences calmly",
+        "zh-CN": "平静地讨论文化差异",
+        "vi": "Thảo luận về sự khác biệt văn hóa một cách bình tĩnh"
+      }
+    ],
+    "correct_answer_index": 0
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Which of the following defines 'Bullying' according to the text?",
+      "zh-CN": "根据文本，以下哪项是对“欺凌”的定义？",
+      "vi": "Theo văn bản, điều nào sau đây định nghĩa 'Bắt nạt'?"
+    },
+    "options": [
+      {
+        "en": "Resolving conflicts calmly",
+        "zh-CN": "平静地解决冲突",
+        "vi": "Giải quyết xung đột một cách bình tĩnh"
+      },
+      {
+        "en": "Unwelcome sexual advances",
+        "zh-CN": "不受欢迎的性要求",
+        "vi": "Những lời gạ gẫm tình dục không mong muốn"
+      },
+      {
+        "en": "Using power to isolate, humiliate, or unfairly assign tasks",
+        "zh-CN": "利用权力孤立、羞辱或不公平地分配任务",
+        "vi": "Sử dụng quyền lực để cô lập, làm nhục hoặc phân công nhiệm vụ không công bằng"
+      },
+      {
+        "en": "Respecting native languages",
+        "zh-CN": "尊重母语",
+        "vi": "Tôn trọng ngôn ngữ bản địa"
+      }
+    ],
+    "correct_answer_index": 2
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Which of the following is considered an early warning sign of harassment?",
+      "zh-CN": "以下哪项被认为是骚扰的早期警告信号？",
+      "vi": "Điều nào sau đây được coi là dấu hiệu cảnh báo sớm của sự quấy rối?"
+    },
+    "options": [
+      {
+        "en": "A colleague suddenly becoming withdrawn or silent",
+        "zh-CN": "同事突然变得孤僻或沉默",
+        "vi": "Một đồng nghiệp đột nhiên trở nên thu mình hoặc im lặng"
+      },
+      {
+        "en": "Improved work performance",
+        "zh-CN": "工作表现改善",
+        "vi": "Hiệu suất công việc được cải thiện"
+      },
+      {
+        "en": "Increased social interaction",
+        "zh-CN": "社交互动增加",
+        "vi": "Tăng cường giao tiếp xã hội"
+      },
+      {
+        "en": "Taking on more responsibilities",
+        "zh-CN": "承担更多责任",
+        "vi": "Đảm nhận nhiều trách nhiệm hơn"
+      }
+    ],
+    "correct_answer_index": 0
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "What is an example of 'Social Isolation' mentioned in the early warning signs?",
+      "zh-CN": "早期警告信号中提到的“社会孤立”的例子是什么？",
+      "vi": "Ví dụ về 'Sự cô lập xã hội' được đề cập trong các dấu hiệu cảnh báo sớm là gì?"
+    },
+    "options": [
+      {
+        "en": "Organizing group activities",
+        "zh-CN": "组织小组活动",
+        "vi": "Tổ chức các hoạt động nhóm"
+      },
+      {
+        "en": "Avoiding the recreation room or dining alone",
+        "zh-CN": "避开娱乐室或独自进餐",
+        "vi": "Tránh xa phòng giải trí hoặc ăn một mình"
+      },
+      {
+        "en": "Talking frequently with shore staff",
+        "zh-CN": "频繁与岸上人员交谈",
+        "vi": "Thường xuyên nói chuyện với nhân viên trên bờ"
+      },
+      {
+        "en": "Reporting a hazard immediately",
+        "zh-CN": "立即报告危险",
+        "vi": "Báo cáo mối nguy hiểm ngay lập tức"
+      }
+    ],
+    "correct_answer_index": 1
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "If a behavior makes you uncomfortable, how should you set a boundary?",
+      "zh-CN": "如果某种行为让你感到不适，你应该如何设定界限？",
+      "vi": "Nếu một hành vi làm bạn khó chịu, bạn nên thiết lập ranh giới như thế nào?"
+    },
+    "options": [
+      {
+        "en": "Ignore the person completely",
+        "zh-CN": "完全无视那个人",
+        "vi": "Hoàn toàn phớt lờ người đó"
+      },
+      {
+        "en": "Laugh and pretend it is a joke",
+        "zh-CN": "笑一笑，假装这是一个玩笑",
+        "vi": "Cười và giả vờ đó là một trò đùa"
+      },
+      {
+        "en": "Clearly state: 'I am uncomfortable with this, please stop.'",
+        "zh-CN": "明确表达：'这让我很不舒服，请停止。'",
+        "vi": "Tuyên bố rõ ràng: 'Tôi không thoải mái với điều này, vui lòng dừng lại.'"
+      },
+      {
+        "en": "Respond with physical force",
+        "zh-CN": "以武力回应",
+        "vi": "Đáp trả bằng bạo lực thể chất"
+      }
+    ],
+    "correct_answer_index": 2
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "What should you do for conflict resolution if a situation escalates?",
+      "zh-CN": "如果冲突升级，在解决冲突时你应该怎么做？",
+      "vi": "Bạn nên làm gì để giải quyết xung đột nếu tình hình leo thang?"
+    },
+    "options": [
+      {
+        "en": "Argue until you win",
+        "zh-CN": "争吵直到你赢为止",
+        "vi": "Tranh cãi cho đến khi bạn thắng"
+      },
+      {
+        "en": "Step away and involve a neutral third party",
+        "zh-CN": "走开并介入中立的第三方",
+        "vi": "Tránh đi và nhờ sự can thiệp của bên thứ ba trung lập"
+      },
+      {
+        "en": "Keep the argument entirely private",
+        "zh-CN": "完全将争吵保密",
+        "vi": "Giữ kín hoàn toàn cuộc tranh cãi"
+      },
+      {
+        "en": "Lock yourself in your cabin",
+        "zh-CN": "把自己锁在客舱里",
+        "vi": "Tự nhốt mình trong cabin"
+      }
+    ],
+    "correct_answer_index": 1
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "If you are in immediate danger, what is the first step you should take?",
+      "zh-CN": "如果你处于眼前的危险中，你应该采取的第一步是什么？",
+      "vi": "Nếu bạn đang gặp nguy hiểm ngay lập tức, bước đầu tiên bạn nên làm là gì?"
+    },
+    "options": [
+      {
+        "en": "Seek help from any crew member or officer immediately",
+        "zh-CN": "立即向任何船员或高级船员寻求帮助",
+        "vi": "Tìm kiếm sự giúp đỡ từ bất kỳ thuyền viên hoặc sĩ quan nào ngay lập tức"
+      },
+      {
+        "en": "Write a formal email to the Port Captain",
+        "zh-CN": "向港口船长写一封正式的电子邮件",
+        "vi": "Viết email chính thức cho Thuyền trưởng cảng"
+      },
+      {
+        "en": "Wait for the monthly safety meeting",
+        "zh-CN": "等待每月的安全会议",
+        "vi": "Đợi đến cuộc họp an toàn hàng tháng"
+      },
+      {
+        "en": "Check the complaints log first",
+        "zh-CN": "首先检查投诉日志",
+        "vi": "Kiểm tra sổ khiếu nại trước tiên"
+      }
+    ],
+    "correct_answer_index": 0
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Under normal circumstances, to whom should you report an incident first?",
+      "zh-CN": "在正常情况下，你应该首先向谁报告事件？",
+      "vi": "Trong trường hợp bình thường, bạn nên báo cáo sự việc cho ai đầu tiên?"
+    },
+    "options": [
+      {
+        "en": "The Flag State",
+        "zh-CN": "船旗国",
+        "vi": "Quốc gia mang cờ"
+      },
+      {
+        "en": "Your Head of Department",
+        "zh-CN": "你的部门主管",
+        "vi": "Trưởng bộ phận của bạn"
+      },
+      {
+        "en": "The local police",
+        "zh-CN": "当地警察",
+        "vi": "Cảnh sát địa phương"
+      },
+      {
+        "en": "The media",
+        "zh-CN": "媒体",
+        "vi": "Phương tiện truyền thông"
+      }
+    ],
+    "correct_answer_index": 1
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "If your Head of Department is involved in the incident, who should you report to?",
+      "zh-CN": "如果你的部门主管卷入了事件，你应该向谁报告？",
+      "vi": "Nếu Trưởng bộ phận của bạn liên quan đến sự việc, bạn nên báo cáo cho ai?"
+    },
+    "options": [
+      {
+        "en": "Directly to the Master",
+        "zh-CN": "直接向船长报告",
+        "vi": "Báo cáo trực tiếp cho Thuyền trưởng"
+      },
+      {
+        "en": "To another Head of Department",
+        "zh-CN": "向其他部门主管报告",
+        "vi": "Báo cáo cho một Trưởng bộ phận khác"
+      },
+      {
+        "en": "To the Chief Cook",
+        "zh-CN": "向大厨报告",
+        "vi": "Báo cáo cho Bếp trưởng"
+      },
+      {
+        "en": "You should not report it",
+        "zh-CN": "你不应该报告",
+        "vi": "Bạn không nên báo cáo"
+      }
+    ],
+    "correct_answer_index": 0
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "If the Master is involved or the issue is not resolved on board, who should you contact?",
+      "zh-CN": "如果船长卷入其中或问题在船上未得到解决，你应该联系谁？",
+      "vi": "Nếu Thuyền trưởng có liên quan hoặc vấn đề không được giải quyết trên tàu, bạn nên liên hệ với ai?"
+    },
+    "options": [
+      {
+        "en": "The nearest hospital",
+        "zh-CN": "最近的医院",
+        "vi": "Bệnh viện gần nhất"
+      },
+      {
+        "en": "Designated Person Ashore (DPA) or Port Captain",
+        "zh-CN": "岸上指定人员 (DPA) 或港口船长",
+        "vi": "Người được chỉ định trên bờ (DPA) hoặc Thuyền trưởng cảng"
+      },
+      {
+        "en": "The ship's mechanic",
+        "zh-CN": "船上的机工",
+        "vi": "Thợ máy của tàu"
+      },
+      {
+        "en": "Your country's embassy",
+        "zh-CN": "你国家的大使馆",
+        "vi": "Đại sứ quán của quốc gia bạn"
+      }
+    ],
+    "correct_answer_index": 1
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Where can you find the contact details for the DPA and Port Captain?",
+      "zh-CN": "你在哪里可以找到岸上指定人员 (DPA) 和港口船长的联系方式？",
+      "vi": "Bạn có thể tìm chi tiết liên hệ của DPA và Thuyền trưởng cảng ở đâu?"
+    },
+    "options": [
+      {
+        "en": "In the engine room manual",
+        "zh-CN": "在机舱手册中",
+        "vi": "Trong sổ tay buồng máy"
+      },
+      {
+        "en": "On the poster in the mess rooms",
+        "zh-CN": "在餐厅的海报上",
+        "vi": "Trên áp phích trong phòng ăn"
+      },
+      {
+        "en": "Inside the safety lockers",
+        "zh-CN": "在安全柜内",
+        "vi": "Bên trong tủ khóa an toàn"
+      },
+      {
+        "en": "In your personal cabin drawer",
+        "zh-CN": "在你个人客舱的抽屉里",
+        "vi": "Trong ngăn kéo cabin cá nhân của bạn"
+      }
+    ],
+    "correct_answer_index": 1
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Where are the contact details for external authorities (like the Flag State) posted?",
+      "zh-CN": "外部机构（如船旗国）的联系方式张贴在哪里？",
+      "vi": "Chi tiết liên hệ của các cơ quan bên ngoài (như Quốc gia mang cờ) được dán ở đâu?"
+    },
+    "options": [
+      {
+        "en": "In the Recreation Room",
+        "zh-CN": "在娱乐室",
+        "vi": "Trong Phòng giải trí"
+      },
+      {
+        "en": "On the main deck",
+        "zh-CN": "在主甲板上",
+        "vi": "Trên boong chính"
+      },
+      {
+        "en": "Only in the Master's office",
+        "zh-CN": "仅在船长办公室内",
+        "vi": "Chỉ có trong văn phòng Thuyền trưởng"
+      },
+      {
+        "en": "In the cargo hold",
+        "zh-CN": "在货舱里",
+        "vi": "Trong hầm hàng"
+      }
+    ],
+    "correct_answer_index": 0
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "How are all formal complaints recorded?",
+      "zh-CN": "所有正式投诉是如何记录的？",
+      "vi": "Tất cả các khiếu nại chính thức được ghi lại như thế nào?"
+    },
+    "options": [
+      {
+        "en": "In the official onboard complaints log",
+        "zh-CN": "在官方的船上投诉日志中",
+        "vi": "Trong sổ ghi chép khiếu nại chính thức trên tàu"
+      },
+      {
+        "en": "On informal pieces of paper",
+        "zh-CN": "在非正式的纸张上",
+        "vi": "Trên những mảnh giấy không chính thức"
+      },
+      {
+        "en": "Through verbal messages only",
+        "zh-CN": "仅通过口头信息",
+        "vi": "Chỉ thông qua tin nhắn bằng lời nói"
+      },
+      {
+        "en": "They are not recorded to save privacy",
+        "zh-CN": "为了保护隐私不予记录",
+        "vi": "Chúng không được ghi lại để bảo vệ quyền riêng tư"
+      }
+    ],
+    "correct_answer_index": 0
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "What specific resources does the company provide for victims of harassment?",
+      "zh-CN": "公司为骚扰受害者提供哪些具体资源？",
+      "vi": "Công ty cung cấp những nguồn lực cụ thể nào cho nạn nhân của sự quấy rối?"
+    },
+    "options": [
+      {
+        "en": "Medical care and mental health support",
+        "zh-CN": "医疗护理和心理健康支持",
+        "vi": "Chăm sóc y tế và hỗ trợ sức khỏe tâm thần"
+      },
+      {
+        "en": "Financial compensation automatically",
+        "zh-CN": "自动进行财务赔偿",
+        "vi": "Tự động bồi thường tài chính"
+      },
+      {
+        "en": "Immediate transfer to another ship",
+        "zh-CN": "立即转移到另一艘船",
+        "vi": "Chuyển ngay sang tàu khác"
+      },
+      {
+        "en": "Extra vacation days",
+        "zh-CN": "额外的休假天数",
+        "vi": "Thêm ngày nghỉ phép"
+      }
+    ],
+    "correct_answer_index": 0
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "How will the company handle and investigate complaints?",
+      "zh-CN": "公司将如何处理和调查投诉？",
+      "vi": "Công ty sẽ xử lý và điều tra các khiếu nại như thế nào?"
+    },
+    "options": [
+      {
+        "en": "Publicly and slowly",
+        "zh-CN": "公开且缓慢地",
+        "vi": "Công khai và chậm chạp"
+      },
+      {
+        "en": "Seriously, confidentially, promptly, and fairly",
+        "zh-CN": "严肃、保密、迅速且公平地",
+        "vi": "Nghiêm túc, bảo mật, nhanh chóng và công bằng"
+      },
+      {
+        "en": "By letting the crew vote on it",
+        "zh-CN": "由船员投票决定",
+        "vi": "Bằng cách để thủy thủ đoàn bỏ phiếu"
+      },
+      {
+        "en": "Only if there is physical evidence",
+        "zh-CN": "仅在有物证的情况下",
+        "vi": "Chỉ khi có bằng chứng vật chất"
+      }
+    ],
+    "correct_answer_index": 1
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "What is the company's policy on retaliation against a person making a complaint in good faith?",
+      "zh-CN": "公司对于善意提出投诉的人遭到报复的政策是什么？",
+      "vi": "Chính sách của công ty đối với việc trả thù người khiếu nại với thiện chí là gì?"
+    },
+    "options": [
+      {
+        "en": "It is strictly prohibited",
+        "zh-CN": "严格禁止",
+        "vi": "Bị nghiêm cấm hoàn toàn"
+      },
+      {
+        "en": "It is allowed in some cases",
+        "zh-CN": "在某些情况下是允许的",
+        "vi": "Được phép trong một số trường hợp"
+      },
+      {
+        "en": "It depends on the rank of the person",
+        "zh-CN": "取决于该人的级别",
+        "vi": "Phụ thuộc vào cấp bậc của người đó"
+      },
+      {
+        "en": "It is ignored",
+        "zh-CN": "视而不见",
+        "vi": "Bị phớt lờ"
+      }
+    ],
+    "correct_answer_index": 0
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "What is a potential consequence for personnel found guilty of violence, harassment, bullying, or sexual assault?",
+      "zh-CN": "被判定犯有暴力、骚扰、欺凌或性侵犯的人员可能会面临什么后果？",
+      "vi": "Hậu quả tiềm năng đối với nhân sự bị kết tội bạo lực, quấy rối, bắt nạt hoặc tấn công tình dục là gì?"
+    },
+    "options": [
+      {
+        "en": "Immediate dismissal and potential criminal prosecution",
+        "zh-CN": "立即解雇并可能受到刑事起诉",
+        "vi": "Sa thải ngay lập tức và có thể bị truy tố hình sự"
+      },
+      {
+        "en": "A written apology only",
+        "zh-CN": "仅需书面道歉",
+        "vi": "Chỉ cần xin lỗi bằng văn bản"
+      },
+      {
+        "en": "A temporary suspension of internet privileges",
+        "zh-CN": "暂时取消上网特权",
+        "vi": "Tạm thời đình chỉ đặc quyền sử dụng internet"
+      },
+      {
+        "en": "Reassignment to a different department without penalty",
+        "zh-CN": "无惩罚地重新分配到其他部门",
+        "vi": "Chuyển sang bộ phận khác mà không bị phạt"
+      }
+    ],
+    "correct_answer_index": 0
+  }
+]
